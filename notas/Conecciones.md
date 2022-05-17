@@ -140,4 +140,15 @@ Cuando sacas del switch, te conectas a:
 - Entrada de pc
 > Ira que bonito, ya llegamos UwU
 
+## Poniendo orden y facilitando cosas despues
+
+### Nomeclatura
+
+Es buena idea tener planos, tags, y mas para poder administrar una red y darle administracion.
+
+### Rebundancia
+
+Cuando es importante tener algo, puedes crear sistemas de redundancia, o bien, sistemas paralelos que te permitan administrar, dar mantenimientos, e incluso tener perdidas sin terminar funcionamiento.
+
+Para diseñar una red, necesitas preguntarte para que va a servir la red. Un ejemplo es cuantos celulares se van a conectar, cuantos refris, y la cantidad de compus.
 
