@@ -20,6 +20,8 @@ Un ejemplo es conversion de ASCCI a Unicode
 
 Aunque ya casi no se usa, dado que capas de abajo se encargan de llevar esto a cabo, se encarga de porporcionar de forma continua la comunicacion entre el transporte y la aplicacion final. Basicamente, ayuda a que la coneccion siga hasta que la quieras apagar.
 
+> sigue siendo al nivel de tu lo programas, pero diversos frameworks manejan esto
+
 ## Transporte (capa 4)
 
 Es el inicio de tu programa al internet de afuera. Este processo hace varias cosas. Como parte de ellos, hace lo que sigue:
