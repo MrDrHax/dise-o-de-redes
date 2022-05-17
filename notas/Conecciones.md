@@ -83,3 +83,61 @@ Es como las señas de la esquina, donde te dicen que calles tiene y a donde van,
 Es el cable de cobre que conecta a con b (puede ser otra cosa aparte de cobre pero me entiendes)
 
 > lit es fisico, puedes tocarlo y lo puedes joder
+
+# Interconecciones de Dispositivos
+
+## Crear y gestionar una red en sus primeras faces
+
+### Cableado Estructurado
+
+No mames no hagas cableado del asco
+
+#### Estandares
+
+Necesitas asegurarte que el cable que pases, siga lo que se llaman los "estandares", puedes meter 12 cables si quieres en un mini hollito, pero se dice que no puedes hacer eso, debes de poner max 40% de todo. 
+
+EL cable UTP viene con varios estandares, dentro de ellos, son:
+
+- cat 5e (max 1Gb)
+- cat 6 
+- cat 7
+- cat 8 (overkill para lo de hoy)
+
+En general, no hagas cosas de 90°
+
+> La idea de los estandares, es que lo que compres sirva como lo que compras. Si hay perdidas, tienes muchos problemas. 
+
+**Menos es mas!!!**
+
+Siempre que puedas, intenta reducir la cantidad de cables que hay. Usar un estandar para todo es mejor, y te ayuda a ahorrar costos y tiempo cuando estructuras todo. 
+
+## Entrada al edificio.
+
+Imaginate que llega Telmex y te dice, donde te lo dejo? Bueno, necesitas ver por donde es que tiene que pasa el cable
+
+## Cuarto de equipos
+
+Es el cerebro de la red. Una vez que entras al edificio, necesitas ver donde pones el servidor, conmutador, switch, etc. Ayuda a mantener todo en orden y arreglar cosas facil.
+
+## Cableado de backbone
+
+Este cableado interconecta el cuarto de equipo con absolutamente todo, ya sean los AP, hasta cada entrada y puerto.
+
+## Gabinete o rack de comunicaciones
+
+Puedes separar cada area con un pequeño rack de comunicaciones, Este se conecta al cuarto de equipos, y proporciona de forma local una mejor comunicacion. 
+
+## Cambiado horizontal
+
+Es cuando ya pasas del backbone al area de trabajo. Suele ser por piso. 
+
+Cuando sacas del switch, te conectas a:
+
+- Un panel
+> Cambia de un cable utp, al outlet que vamos a conectar
+- Outlet
+> La mierda donde conectas el cable para tu compu bonito (rj45) se le llama jack al conector (f) y el plug (m) 
+- Entrada de pc
+> Ira que bonito, ya llegamos UwU
+
+
