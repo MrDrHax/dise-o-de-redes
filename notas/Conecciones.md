@@ -1,5 +1,26 @@
 # Conecciones de computadora a compu
 
+# Modo 3 capas
+
+Es diseño LAN de 3 capas. Antes era 5, pero ya no.
+
+## Nucleo
+
+La madre donde sacas todo
+
+> Se recomienda poner un switch multicapas (tambienc conocido como switch nivel 3)
+> Tambien puedes usar un router
+
+## Direccionamiento
+
+El madre donde se va todo a donde tiene que llegar
+
+> Puedes usar switch nivel 2
+
+## Acceso
+
+Tu pinshi compu
+
 # Niveles
 
 ## Aplicacion (capa 7)
@@ -151,4 +172,32 @@ Es buena idea tener planos, tags, y mas para poder administrar una red y darle a
 Cuando es importante tener algo, puedes crear sistemas de redundancia, o bien, sistemas paralelos que te permitan administrar, dar mantenimientos, e incluso tener perdidas sin terminar funcionamiento.
 
 Para diseñar una red, necesitas preguntarte para que va a servir la red. Un ejemplo es cuantos celulares se van a conectar, cuantos refris, y la cantidad de compus.
+
+# Diseño red lan
+
+Para crear una red lan, necesitas pensar en cuantas personas van a acceder, y basado en eso, seguir una jerarquia.
+
+## Capa de acesso
+
+Es donde te conectas como *usuario*. Es donde normalmente se encuentra la capa inalambrica.
+
+> Aqui se encuentran switches baratos y en general el wifi (o AP)
+
+## Capa de distribuicion
+
+En esta capa es donde se maneja todo relacionado con como se conecta todo el lan. Se encargan de llevar todo el backbone.
+
+> Suele solo haber cables
+
+## Capa del core
+
+Puedes usar switches para poder manejar paquetes de forma sencilla, pero estos switches son mas caros.
+
+> Aqui se encuentran los routers
+
+## Puertos de router contra switch
+
+Cada puerto de router tiene una red **differente** por lo que si quieres tener una red igual, necesitas switches. Los switches manejan **la misma red**.
+
+> Nota: Por red se refiere a un LAN differente. Si quieres conectar 2 redes juntas, necesitas un switch y un protocolo para que se comuniquen.
 
