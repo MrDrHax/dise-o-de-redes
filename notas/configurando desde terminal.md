@@ -1,3 +1,35 @@
+- [Conectandose](#conectandose)
+- [Tipos de configuracion](#tipos-de-configuracion)
+  - [AUX](#aux)
+  - [Consola](#consola)
+- [Inicio](#inicio)
+  - [`en`](#en)
+  - [`show start`](#show-start)
+  - [`erase start`](#erase-start)
+  - [`config t`](#config-t)
+  - [`no ip domain lookup`](#no-ip-domain-lookup)
+  - [`line con 0`](#line-con)
+  - [`logging synchronous`](#logging-synchronous)
+  - [`interface (gigabit/fast)Ethernet 0/0` (solo router)](#interface-gigabitfastethernet-00-solo-router)
+    - [`int (g/f)0/0` (chico)](#int-gf00-chico)
+  - [`ip adress <ip del router> <mascara>`](#ip-adress-ip-del-router-mascara)
+  - [`no shut`](#no-shut)
+  - [`exit`](#exit)
+  - [`ip dhcp pool <nombre>`](#ip-dhcp-pool-nombre)
+  - [`network <ip.0> <mascara>`](#network-ip0-mascara)
+  - [`default-router <gateway>`](#default-router-gateway)
+  - [`dns-server <ip>`](#dns-server-ip)
+  - [`ip dhcp excluded-adress <ip {inicial}> {<ip final>}`](#ip-dhcp-excluded-adress-ip-inicial-ip-final)
+  - [`ip dchp binding`](#ip-dchp-binding)
+  - [`show run`](#show-run)
+  - [`transport input telnet`](#transport-input-telnet)
+  - [`password <password>`](#password-password)
+  - [`no password <password a quitar>`](#no-password-password-a-quitar)
+  - [`username <username> secret <password>`](#username-username-secret-password)
+  - [`enable secret <user>`](#enable-secret-user)
+  - [`login local`](#login-local)
+
+
 # Conectandose
 
 Este duplica que es lo que se hace en tanto 
@@ -87,3 +119,52 @@ Es el cable fisico detras de la madre. Necesitas conectar desde tu compu al otro
 
 > Muestra todos los ips dados desde dchp.
 
+## `show run`
+
+> Te da info util del router
+
+## `transport input telnet`
+
+> activa el telnet para poderte conectar al dispositivo
+
+NOTA: Telnet no cifra nada, plox no lo uses si esta afuera
+
+## `password <password>`
+
+> dar password, siempre usa cisco con equipo de escuela 
+
+## `no password <password a quitar>`
+
+> Quita el usuario del modem
+
+## `username <username> secret <password>`
+
+> Creas un nuevo usuario con una contraseña
+
+## `enable secret <user>`
+
+> Activa el password para el usuario dado y poder usar telnet
+
+## `login local`
+
+> Dertermina quien puede entrar
+
+## `transport input ssh`
+
+> deja de usar telnet. Util para cifrar con ssh
+
+## `crypto key generate rsa`
+
+> genera llaves para el ssh, con el formato rsa. 246 es medio seguro.
+
+## `hostname <nombre>`
+
+> cambia nombre al dispositivo
+
+## `ip domain-name <nombre de red>`
+
+> Le das un nombre a tu red
+
+## `version ssh 2`
+
+> cambia la version de ssh a una mas chida
