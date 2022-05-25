@@ -26,6 +26,22 @@ Esto significa que los primeros 24 bits no pueden ser modificados, estos son la 
 
 Esto significa que los primeros 25 bits no pueden ser modificados, estos son la red, y los ultimos 7 bits son para identificar cada compu.
 
+> NOTA< las mascaras siempre llevan 0 a la derecha, y 1 a la izquiera. La mascara se usa para proteger la ip, todo lo que tenga 1, no puede ser editado en un futuro.
+
+#### Leyendo una mascara
+
+Una mascara se puede escribir como 0.0.0.0/24, Donde:
+
+|resumen|ip| bytes de mascara|
+|-|-|-|
+|0.0.0.0/24|0.0.0.0|11111111 11111111 11111111 00000000|
+
+o bien, el 24 significa que la mascara protege 24 bits (24 unos). 
+
+#### Para que sirve
+
+Si quieres enviar un broadcast a todos los ips de la red, mandas lo que tenga unos, dejando el resto vacio, de esta forma sabes quienes estan en la red.
+
 ## Saliendo afuera
 
 ### Ruta (route)

@@ -214,7 +214,7 @@ Accept-Language: en
 
 Donde:
 
-`GET` > Tomar algo de x o y (puede ser GET, POST o nose)
+`GET` > Comando a correr (puede ser GET, POST, DELETE, PUT o PATCH)
 
 `(/index.html)` > La ruta a donde te quieres conectar
 
