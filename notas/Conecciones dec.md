@@ -201,3 +201,31 @@ Cada puerto de router tiene una red **differente** por lo que si quieres tener u
 
 > Nota: Por red se refiere a un LAN differente. Si quieres conectar 2 redes juntas, necesitas un switch y un protocolo para que se comuniquen.
 
+# El formato http
+
+Para poder conectarte a internet, se manda algo como:
+
+```
+GET (/index.html) HTTP/1.1
+
+Host: www.example.com
+Accept-Language: en
+```
+
+Donde:
+
+`GET` > Tomar algo de x o y (puede ser GET, POST o nose)
+
+`(/index.html)` > La ruta a donde te quieres conectar
+
+`HTTP/1.1` > El formato que se esta usando
+
+`Host` > A donde se conecto el usuario
+
+`Accept-Language` > El lenguaje que busca el usuario
+
+## HTTPS vs HTTP
+
+Cuando tienes un certificado ssl, puedes encriptar tu trafico en HTTPS. Lo que esto significa para nosotros es que mientras cualquier persona puede escuchar nuestras conversaciones, nadie mas que tu y el servidor al que te conectas puede desifrar lo que tienes.
+
+Cuando usas HTTP solamente, se manda todo en formato de texto plano. Puedes conectarte a 
