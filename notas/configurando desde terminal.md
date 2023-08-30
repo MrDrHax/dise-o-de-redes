@@ -8,7 +8,7 @@
   - [`erase start`](#erase-start)
   - [`config t`](#config-t)
   - [`no ip domain lookup`](#no-ip-domain-lookup)
-  - [`line con 0`](#line-con)
+  - [`line con 0`](#line-con-0)
   - [`logging synchronous`](#logging-synchronous)
   - [`interface (gigabit/fast)Ethernet 0/0` (solo router)](#interface-gigabitfastethernet-00-solo-router)
     - [`int (g/f)0/0` (chico)](#int-gf00-chico)
@@ -28,6 +28,19 @@
   - [`username <username> secret <password>`](#username-username-secret-password)
   - [`enable secret <user>`](#enable-secret-user)
   - [`login local`](#login-local)
+  - [`transport input ssh`](#transport-input-ssh)
+  - [`crypto key generate rsa`](#crypto-key-generate-rsa)
+  - [`hostname <nombre>`](#hostname-nombre)
+  - [`ip domain-name <nombre de red>`](#ip-domain-name-nombre-de-red)
+  - [`version ssh 2`](#version-ssh-2)
+- [Configurando Router](#configurando-router)
+  - [`config t`](#config-t-1)
+    - [`ip routing`](#ip-routing)
+    - [`ip route <ip destino> <mascara> <interfaz/ip>`](#ip-route-ip-destino-mascara-interfazip)
+    - [`int <nombre interfaz>` / `interface <nombre interfaz>`](#int-nombre-interfaz--interface-nombre-interfaz)
+      - [`ip address <IP> <MASCARA>`](#ip-address-ip-mascara)
+      - [`no shutdown`](#no-shutdown)
+  - [`copy run start` / `write mem`](#copy-run-start--write-mem)
 
 
 # Conectandose
@@ -168,3 +181,44 @@ NOTA: Telnet no cifra nada, plox no lo uses si esta afuera
 ## `version ssh 2`
 
 > cambia la version de ssh a una mas chida
+
+
+# Configurando Router
+
+## `config t`
+
+entrar en modo config del router
+
+### `ip routing`
+
+Activa modo router
+
+### `ip route <ip destino> <mascara> <interfaz/ip>`
+
+Crea una entrada a la tabla de rauteos
+
+> ip route 10.10.0.0 255.255.0.0 s1/0
+> ip route 10.10.0.0 255.255.0.0 192.50.23.1
+
+para hacer un comodin
+
+### `int <nombre interfaz>` / `interface <nombre interfaz>` 
+
+Entra a la configuracion de una interfaz
+
+> Para tener el nombre de la interfaz, es el puerto donde esta conectado, ejemplo f0/0 para fast internet en el puerto 0/0
+>
+> Ejemplo: int f0/0
+
+#### `ip address <IP> <MASCARA>`
+
+La mascara debe de ser en formato 0.0.0.0
+
+#### `no shutdown`
+
+Se quita el modo apagado
+
+## `copy run start` / `write mem`
+
+guarda lo que se copio
+
